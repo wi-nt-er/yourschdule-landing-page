@@ -1,0 +1,163 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+header .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: white;
+  color: #667eea;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+header .btn:hover {
+  background: #eee;
+}
+
+/* Features Section */
+.features {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.features h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.features p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.checkmark {
+  color: #667eea;
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 60px 20px 40px;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer .small {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-container input[type="email"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.form-container button {
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #5a67d8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .features h2 {
+    font-size: 1.2rem;
+  }
+
+  .form-container input,
+  .form-container button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
